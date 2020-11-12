@@ -40,6 +40,6 @@ docker run --name delivery_much -e GIPHY_API_KEY='SUA_CHAVE' -p 3000:3000 -d del
 -   [Giphy](https://developers.giphy.com/docs/sdk) - The first and largest GIF search engine, you gain free access to our ever-growing content library of GIFs and Stickers, plus brand new features like animated Emoji and Text
 -   [Docker](https://www.docker.com/) - Package Software into Standardized Units for Development, Shipment and Deployment
 
-## Author:
+## Autor:
 
 -   **Magno Belloni** - [LinkedIn](https://www.linkedin.com/in/magnobelloni/)
