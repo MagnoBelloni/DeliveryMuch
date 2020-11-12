@@ -32,6 +32,6 @@ app.use((request: Request, response: Response, _: NextFunction) => {
     });
 });
 
-app.listen(3333, () => {
+app.listen(3000, () => {
     console.log('Server started!!');
 });
