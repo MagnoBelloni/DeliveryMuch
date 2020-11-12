@@ -35,10 +35,10 @@ docker run --name delivery_much -e GIPHY_API_KEY='SUA_CHAVE' -p 3000:3000 -d del
 
 -   [Typescript](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale.
 -   [Express](https://expressjs.com/pt-br/) - Fast, unopinionated, minimalist web framework for Node.js
--   [Jest](https://jestjs.io/) - Delightful JavaScript Testing.
 -   [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
 -   [RecipePuppy](http://www.recipepuppy.com/about/api/) - This api lets you search through recipe puppy database of over a million recipes by keyword and/or by search query.
 -   [Giphy](https://developers.giphy.com/docs/sdk) - The first and largest GIF search engine, you gain free access to our ever-growing content library of GIFs and Stickers, plus brand new features like animated Emoji and Text
+-   [Docker](https://www.docker.com/) - Package Software into Standardized Units for Development, Shipment and Deployment
 
 ## Author:
 
