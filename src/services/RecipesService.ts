@@ -35,8 +35,6 @@ interface IAPIGiphyResponse {
 @injectable()
 export default class RecipesService {
     public async index(i: string): Promise<IResponse> {
-        const recipesFormatted: IRecipes[] = [];
-
         const keywords = i.split(',');
 
         const { data } = await apiRecipe.get<IAPIRecipeResponse>('', {
@@ -68,8 +66,8 @@ export default class RecipesService {
 
             const apiGiphyResponse = await apiGiphy.get<IAPIGiphyResponse>('', {
                 params: {
-                    q: response.title,
-                    api_key: 'fu1gRGU5V2JkZjE1G05xWd0iWxrhdn0I',
+                    q: formattedTitle,
+                    api_key: process.env.GIPHY_API_KEY?.toString(),
                     limit: '1',
                 },
             });
