@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
+import RecipesService from '../services/RecipesService';
 
 export default class RecipesController {
     public async index(
@@ -9,7 +10,11 @@ export default class RecipesController {
         try {
             const { i } = request.params;
 
-            return response.json('controller');
+            const recipesService = container.resolve(RecipesService);
+
+            const recipes = await recipesService.index(i);
+
+            return response.json(recipes);
         } catch (error) {
             return response.status(400).json({ message: error });
         }
